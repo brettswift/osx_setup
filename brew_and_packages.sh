@@ -18,6 +18,7 @@ brew tap homebrew/completions
 
 brew install brew-cask
 
+echo "Java may require your password"
 brew cask install java
 
 echo "install packages"
@@ -61,7 +62,7 @@ echo "finished packages,  begin installing casks"
 
 brew cask install caffeine
 brew cask install dropbox
-brew cask install one-password
+brew cask install 1password
 
 brew cask install iterm2
 brew cask install macvim

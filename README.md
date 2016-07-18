@@ -4,6 +4,15 @@
 
 1. Setup ~/src directory
     * `mkdir -p ~/src; cd ~/src`
+2. Create temporary .ssh keys and upload to bitbucket.
+    * dotfiles will override these later.
+    * `ssh-keygen;  cat ~/.ssh/id_rsa.pub | pbcopy`
+2. Setup passwordless sudo
+    * `sudo visudo`
+    * Change this line FROM:
+        * `%admin ALL=(ALL) ALL`
+    * TO:
+      * `%admin ALL=(ALL) NOPASSWD: ALL`
 2. Install X-Code
     * then run: `xcode-select --install` and follow prompts.
 2. Clone this
