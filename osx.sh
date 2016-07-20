@@ -36,8 +36,27 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # settings brought in from old boxen config
 defaults write -g NSNavPanelExpandedStateForSaveMode -boolean true
 defaults write -globalDomain com.apple.mouse.tapBehavior -int 1
+#dock
+defaults write com.apple.dock autohide 1
+defaults write com.apple.dock magnification 1
+defaults write com.apple.dock checked-for-launchpad 1 #clear dock
+defaults write com.apple.dock tilesize 20
+killall Dock
 
+defaults write com.apple.finder AppleShowAllFiles 1
+defaults write com.apple.universalaccess HIDScrollZoomModifierMask 262144 #ctrl_mod_zoom
+defaults write com.apple.universalaccess closeViewScrollWheelToggle 1
 
+defaults write com.apple.desktopservices DSDontWriteNetworkStores 1
+defaults write com.apple.LaunchServices LSQuarantine 0
+chflags nohidden ~/Library #unhide library
+
+defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+
+#screensaver on - bottom right
+defaults write com.apple.dock wvous-br-corner -int 5
+defaults write com.apple.dock wvous-br-modifier -int 0
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
