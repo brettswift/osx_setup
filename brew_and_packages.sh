@@ -63,6 +63,7 @@ echo "finished packages,  begin installing casks"
 brew cask install caffeine
 brew cask install dropbox
 brew cask install 1password
+brew cask install alfred
 
 brew cask install iterm2
 brew cask install macvim
