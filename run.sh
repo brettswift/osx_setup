@@ -6,5 +6,5 @@ set -x
 echo "setup brew and packages"
 
 `./brew_and_packages.sh`
-`./rbenv.sh`
+#`./rbenv.sh`
 `./homesick.sh`
