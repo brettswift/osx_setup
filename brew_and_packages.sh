@@ -48,6 +48,7 @@ brew install freetype
 brew install gource
 brew install libtool
 brew install bat 
+brew install ranger
 
 brew install pyenv pyenv-virtualenv
 
