@@ -13,7 +13,7 @@ fi
 
 
 echo "Setup brew casks"
-brew tap caskroom/cask
+brew tap homebrew/cask
 #brew tap homebrew/completions
 
 #brew install brew-cask
