@@ -6,7 +6,7 @@ set -e
 echo "install brew and packages"
 
 if ! hash brew 2>/dev/null; then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 else
   echo "brew already installed - not installing"
 fi
