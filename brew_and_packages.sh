@@ -16,12 +16,13 @@ echo "Setup brew casks"
 brew tap homebrew/cask
 #brew tap homebrew/completions
 
-#brew install brew-cask
+
 
 echo "Java may require your password"
 #brew cask install java
 
 echo "install packages"
+
 
 brew install libyaml
 brew install asciinema
@@ -44,6 +45,7 @@ brew install git-extras
 brew install gitup
 brew install openssl
 
+
 brew install dnsmasq
 #brew install docker
 
@@ -58,22 +60,26 @@ brew install bat
 brew install ranger
 
 brew install pyenv pyenv-virtualenv
+brew install zlib
+brew install bzip2
+brew install libzip
+brew install libiconv
+# brew install ruby-build
 
-echo "finished packages,  begin installing casks"
+brew install pyenv 
+brew install pyenv-virtualenv
 
 brew cask install kdiff3
-brew cask install dropbox
-brew cask install 1password
-brew cask install alfred
-brew cask install vagrant
-# brew cask install vagrant-manager # under evaluation!s
-brew cask install virtualbox
-brew cask install spotify
-brew cask install bettertouchtool
-brew cask install skype
-brew cask install the-unarchiver
-brew cask install day-o
-brew cask install macdown
 
 
-brew cask install iterm2
+brew install 1password
+brew install alfred
+# brew install vagrant-manager # under evaluation!s
+brew install spotify
+brew install bettertouchtool
+brew install the-unarchiver
+brew install day-o
+brew install macdown
+
+brew install iterm2
+brew install macvim
