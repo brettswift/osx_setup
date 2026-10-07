@@ -3,10 +3,11 @@
 set -e
 set -x
 
-echo "setup brew and packages"
+cd "$(dirname "$0")"
 
-`./brew_and_packages.sh`
-#`./rbenv.sh`
-# deprecated, using bretswift/osx_dotfiles instead `./homesick.sh`
-`./osx.sh`
-`./sudo.sh`
+./brew_and_packages.sh
+./oh-my-zsh.sh
+./dotfiles.sh
+./nvm.sh
+./neovim.sh
+./osx.sh
