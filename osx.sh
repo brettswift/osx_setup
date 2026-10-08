@@ -30,13 +30,13 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
 defaults write -globalDomain com.apple.mouse.tapBehavior -int 1
 #dock
-defaults write com.apple.dock autohide 1
-defaults write com.apple.dock magnification 1
-defaults write com.apple.dock tilesize 20
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock magnification -bool true
+defaults write com.apple.dock tilesize -int 20
 
 
-defaults write com.apple.desktopservices DSDontWriteNetworkStores 1
-defaults write com.apple.LaunchServices LSQuarantine 0
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.LaunchServices LSQuarantine -bool false
 chflags nohidden ~/Library #unhide library
 
 defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
