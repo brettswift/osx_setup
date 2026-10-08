@@ -25,3 +25,4 @@ brew install aws-sam-cli
 brew install --cask iterm2
 brew install --cask spotify
 brew install --cask 1password
+brew install --cask raycast

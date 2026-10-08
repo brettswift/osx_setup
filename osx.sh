@@ -28,7 +28,10 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
-defaults write -globalDomain com.apple.mouse.tapBehavior -int 1
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 #dock
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock magnification -bool true
@@ -39,8 +42,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 chflags nohidden ~/Library #unhide library
 
-defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
-defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
+defaults write -g ApplePressAndHoldEnabled -bool false
 
 #screensaver on - bottom right
 defaults write com.apple.dock wvous-br-corner -int 5
