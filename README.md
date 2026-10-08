@@ -16,7 +16,7 @@ Apple Silicon Macs. Run the scripts in `run.sh` order; each can also be run on i
 | `oh-my-zsh.sh` | oh-my-zsh, spaceship theme, zsh-nvm, zsh-syntax-highlighting, iTerm2 shell integration, fzf keybindings |
 | `dotfiles.sh` | clones `osx_dotfiles` as a bare repo into `~/dotfiles` and checks it out over `$HOME` (existing files go to `~/.dotfiles-backup`) |
 | `nvm.sh` | nvm and the latest node LTS |
-| `neovim.sh` | vim-plug, a pyenv `neovim3` virtualenv with pynvim, `:PlugInstall` |
+| `neovim.sh` | vim-plug, a venv with pynvim (Homebrew python), `:PlugInstall` |
 | `osx.sh` | Finder, Dock, keyboard and screenshot defaults |
 
 Put API tokens in `~/.secrets` (sourced by `.zshrc`, never committed).
